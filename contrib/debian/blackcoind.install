@@ -1,0 +1,2 @@
+debian/bin/x6coind usr/bin
+src/x6coind usr/lib/x6coin

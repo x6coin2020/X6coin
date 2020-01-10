@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+umask 077
+
+basedir=~/.x6coin
+dbfile="$basedir/DB_CONFIG"
+cfgfile="$basedir/x6coin.conf"
+
+[ -e "$basedir" ] || mkdir "$basedir"
+
+# x6coin does not clean up DB log files by default
+[ -e "$dbfile" ] || echo 'set_flags DB_LOG_AUTOREMOVE' > "$dbfile"
+
+exec /usr/lib/x6coin/x6coin-qt "$@"

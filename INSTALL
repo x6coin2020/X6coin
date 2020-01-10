@@ -1,0 +1,9 @@
+Building x6coin
+
+See doc/readme-qt.rst for instructions on building x6coin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of x6coin.
+
+See doc/build-*.txt for instructions on building x6coind,
+the intended-for-services, no-graphical-interface, reference
+implementation of x6coin.
